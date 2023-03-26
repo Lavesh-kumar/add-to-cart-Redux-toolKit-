@@ -1,0 +1,67 @@
+
+*{
+    font-family:'Times New Roman', Times, serif;
+ }
+
+.cartparent{
+    margin: auto;
+        width: 70%;
+        box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+        background-color:white;
+        border-radius: 10px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    padding: 50px;
+    
+}
+
+
+.cartCard img {
+    height: 80px;
+   border-radius: 5px;
+}
+.card {
+    background: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+
+}
+
+
+.productsWrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+
+
+
+}
+
+
+.heading {
+    padding: 25px 0;
+}
+.cartCount {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-left: 40px;
+}
+.navLink {
+    text-decoration: none;
+    color: black;
+    margin-left: 20px;
+}
+
+.cartCard {
+
+    font-size: 20px;
+    font-family:'Times New Roman', Times, serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+     background: #fff;
+    margin-bottom: 20px;
+    padding: 14px;
+    border-radius: 5px;
+}

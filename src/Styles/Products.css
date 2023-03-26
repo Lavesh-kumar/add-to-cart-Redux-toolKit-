@@ -1,0 +1,68 @@
+.allproduct{
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    display: flex;
+    width: 95%;
+    justify-content: space-around;
+    flex-direction: row;
+    background-color:white;
+    flex-wrap: wrap;
+    margin: auto;
+    border-radius: 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    
+    }
+    .product{
+    margin: 10px;
+    width: 250px;
+    height: 400px;
+    background-color: white;
+    margin: 20px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    border-radius: 10px;
+    color: black;
+    text-align: center;
+    
+  }
+    
+    
+    .product img{
+    width: 100%;
+    border-radius: 10px;
+    
+    }
+    
+    .product h1{
+    font-size: 20px;
+    font-family:'Times New Roman', Times, serif;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+    
+    }
+    
+    .product p{
+      font-size: 15px;
+      font-family:'Times New Roman', Times, serif;
+      text-align: center;
+      padding: 10px;
+    }
+
+    .carticon{
+
+      color:white;
+      font-size: 25px;
+    }
+    
+    #container:hover{
+      transform: scale(1.1);
+    }
+    #container button:hover{
+      
+    
+    
+    }
+    
+    
+    
