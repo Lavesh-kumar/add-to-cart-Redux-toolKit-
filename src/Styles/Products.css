@@ -1,5 +1,4 @@
 .allproduct{
-    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
     display: flex;
     width: 95%;
     justify-content: space-around;
@@ -16,7 +15,7 @@
     .product{
     margin: 10px;
     width: 250px;
-    height: 400px;
+    min-height: 400px;
     background-color: white;
     margin: 20px;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
@@ -65,4 +64,61 @@
     }
     
     
+    /* pagination */
+
+.pag{
+
+
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
     
+
+
+}    
+   
+
+
+body {
+	background-color: #eee;
+}
+.pagination {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.pagination > a,
+.pagination > span,.pagination > button {
+	background-color: #fff;
+	color: #999;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  flex-wrap: wrap;
+  
+	font-size: 20px;
+	margin: 0 5px 8px;
+	border-radius: 5px;
+	min-width: 20px;
+	padding: 0 10px;
+	height: 40px;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+	text-decoration: none;
+	position: relative;
+  border: 0px;
+	font-family: Helvetica, Arial, sans-serif;
+}
+.pagination > span {
+	pointer-events: none;
+}
+.pagination svg {
+	height: 24px;
+	width: 24px;
+}
+.pagination > a.page-active {
+	background-color: #f00;
+	color: white !important;
+}
+.pagination > a:hover {
+	background-color: #f00;
+	color:white !important;
+}

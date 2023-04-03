@@ -15,7 +15,7 @@ const cartitem=useSelector((state)=>state.items)
   return (
     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
       <Container>
-        <Navbar.Brand href="#home">Smiliy.pk</Navbar.Brand>
+        <Navbar.Brand href="/">Smiliy.pk</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">

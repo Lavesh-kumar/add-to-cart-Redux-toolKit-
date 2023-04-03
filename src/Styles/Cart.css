@@ -14,9 +14,13 @@
     padding: 50px;
     
 }
+.photo img{
 
+    width: 100%;
+}
 
 .cartCard img {
+    max-width: 100px;
     height: 80px;
    border-radius: 5px;
 }
@@ -62,6 +66,36 @@
     justify-content: space-between;
      background: #fff;
     margin-bottom: 20px;
+    
     padding: 14px;
     border-radius: 5px;
 }
+
+
+
+.title,.quantity,.price,.photo{
+
+
+    width: 200px;
+    margin: 7px;
+}
+@media screen and (max-width: 877px) {
+    
+    .cartCard{
+
+padding: 0px;
+font-size: 10px !important;
+
+
+    }
+.cartparent{
+
+    width: 100%;
+}
+
+.photo img{
+width:50px;
+height: 40px;
+
+}
+  }

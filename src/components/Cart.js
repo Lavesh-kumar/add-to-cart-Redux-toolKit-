@@ -3,6 +3,9 @@ import { useSelector } from 'react-redux';
 import { remove,loadCart } from '../store/cartSlice';
 import { useDispatch } from 'react-redux';
 import { useEffect } from 'react';
+import Swal from 'sweetalert2';
+
+
 function Cart() {
 const dispatch=useDispatch()
 //make function from dispatch hook
@@ -11,6 +14,15 @@ const dispatch=useDispatch()
 const handleremove=(product)=>{
 dispatch(remove(product))
 //note action are always called inside dispatch function
+
+Swal.fire({
+
+  icon: 'success',
+  title: 'product removed successfully',
+  showConfirmButton: true,
+  timer: 1500
+  })
+
 
 
 }
@@ -47,13 +59,15 @@ return (
       <div className="cartWrapper">
           {cart.map((product) => (
               <div key={product.id} className="cartCard">
-                  <img src={product.images} alt="" />
-          <div style={{width:'200px'}}>   <h5>{product.title}</h5></div>
-          <div style={{width:'50px'}}> <h5>{"$"+product.price}</h5></div>
-          <div style={{width:'50px'}}> <h5>{product.quantity}</h5></div>
-                  <button onClick={()=>handleremove(product.id)} className='btn btn-danger btn-sm'>
+                 <div className='photo'> <img src={product.images} alt="" /></div>
+          <div className='title'>   <p>{product.title}</p></div>
+          <div className='price'> <p>{"$"+product.price}</p></div>
+          <div className='quantity'> <p>{product.quantity}</p></div>
+                <div><button onClick={()=>handleremove(product.id)} className='btn btn-danger btn-sm'>
                       Remove
-                  </button>
+                  </button></div>
+   
+   
               </div>
           ))}
 {/* 
@@ -62,13 +76,8 @@ bottom part
 
     <div style={{width:"100%"}}>
   <div>  <p style={{width:"100%",display:"flex",justifyContent:"right",borderTop:"1px solid black",borderBottom:"1px solid black"}} >total:${Total()}</p> </div>
-<br/>
- <button style={{float:"right"}} className='btn btn-danger btn-sm'>Place order</button>      
+
    </div>
-
-
-
-
 
 
 
