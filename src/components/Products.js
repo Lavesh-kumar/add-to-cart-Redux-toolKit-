@@ -50,8 +50,8 @@ Dispatch(loadCart())
 //code for pagination
 
 const [currentPage, setcurrentPage] = useState(1);
-const [itemsPerPage, setitemsPerPage] = useState(8);
-const [pageNumberLimit, setpageNumberLimit] = useState(10);
+const [itemsPerPage] = useState(8);       // setitemsPerPage
+const [pageNumberLimit] = useState(10);//setpageNumberLimit
 const [maxPageNumberLimit, setmaxPageNumberLimit] = useState(10);
 const [minPageNumberLimit, setminPageNumberLimit] = useState(0);
 
@@ -71,7 +71,7 @@ const currentItems = products.slice(indexOfFirstItem, indexOfLastItem);
 const renderPageNumbers = pages.map((number) => {
   if (number < maxPageNumberLimit + 1 && number > minPageNumberLimit) {
     return (
-      <a
+      <a 
         key={number}
         id={number}
         onClick={handleClick}
@@ -165,7 +165,7 @@ return (
 
 <div className="pagination">
 	<button  onClick={handlePrevbtn}
-            disabled={currentPage == pages[0] ? true : false} title="previous page"><svg fill="currentColor"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg></button>
+            disabled={currentPage === pages[0] ? true : false} title="previous page"><svg fill="currentColor"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg></button>
 	
   
   {pageDecrementBtn}
