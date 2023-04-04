@@ -1,6 +1,6 @@
 import React from 'react'
 import { useSelector } from 'react-redux';
-import { remove,loadCart } from '../store/cartSlice';
+import { remove } from '../store/cartSlice';
 import { useDispatch } from 'react-redux';
 import { useEffect } from 'react';
 import Swal from 'sweetalert2';
@@ -27,15 +27,6 @@ Swal.fire({
 
 }
 
-
-
-
-useEffect(()=>{
-
-    dispatch(loadCart())
-    
-    },[dispatch])
-    
 
 
 

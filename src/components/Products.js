@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import { useDispatch } from "react-redux";
 import Swal from 'sweetalert2'
-const {add,loadCart}=require('../store/cartSlice')
+const {add}=require('../store/cartSlice')
 
 
 
@@ -29,14 +29,6 @@ Swal.fire({
   imageAlt: 'Custom image',
 })
 }
-
-
-//to trigger the loadCart action
-useEffect(()=>{
-
-Dispatch(loadCart())
-
-},[Dispatch])
 
 
 
