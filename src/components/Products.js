@@ -144,7 +144,7 @@ return (
 <h1>{product.title.slice(0,20)+".."}</h1>
 <p>{product.description.slice(0,50)}</p>
 <p style={{marginTop:'-30px',color:'red'}}>{"$"+product.price}</p>
-<button className='btn btn-danger btn-sm' onClick={()=>handleAdd(product)}>add to cart</button>
+<button className='btn btn-danger btn-sm' onClick={()=>handleAdd(product)} style={{marginBottom:'40px'}}>add to cart</button>
 </div>
 </div>
 
